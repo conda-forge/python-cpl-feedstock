@@ -13,14 +13,15 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install
   skip: true  # [win]
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - toolchain
     - setuptools
   run:
     - python
