@@ -1,7 +1,7 @@
 {% set name = "python-cpl" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "02139d6f3fbaaa29bfe9a1e6b247bd41b7423eacfa40c02ca441eb0560475cfb" %}
+{% set hash_value = "a96857cab7400e7189b1d9c256b080aef9006a1ad829d35fdba829f6c968a24b" %}
 
 package:
   name: '{{ name|lower }}'
@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install
   skip: true  # [win]
 
