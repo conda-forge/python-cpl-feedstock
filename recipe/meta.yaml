@@ -1,7 +1,7 @@
 {% set name = "python-cpl" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.4" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "02139d6f3fbaaa29bfe9a1e6b247bd41b7423eacfa40c02ca441eb0560475cfb" %}
+{% set hash_value = "6dfca58676967b752b2cdf636e1d6094f02259fcaaad5ed167f32ff0b69ee76b" %}
 
 package:
   name: '{{ name|lower }}'
