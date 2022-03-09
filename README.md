@@ -189,4 +189,4 @@ Feedstock Maintainers
 * [@bsipocz](https://github.com/bsipocz/)
 * [@mwcraig](https://github.com/mwcraig/)
 * [@olebole](https://github.com/olebole/)
-
+* [@hugobuddel](https://github.com/hugobuddel/)
