@@ -1,7 +1,5 @@
 {% set name = "python-cpl" %}
 {% set version = "0.7.4" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "6dfca58676967b752b2cdf636e1d6094f02259fcaaad5ed167f32ff0b69ee76b" %}
 
 package:
   name: '{{ name|lower }}'
@@ -10,10 +8,10 @@ package:
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  'sha256': '6dfca58676967b752b2cdf636e1d6094f02259fcaaad5ed167f32ff0b69ee76b'
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [win]
 
